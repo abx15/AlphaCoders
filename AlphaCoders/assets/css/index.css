@@ -1,0 +1,70 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+  :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #f59e0b;
+      --dark: #1e293b;
+      --light: #f8fafc;
+      --gray: #64748b;
+  }
+
+  body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background-color: #f9fafb;
+      scroll-behavior: smooth;
+  }
+
+  .code-font {
+      font-family: 'Roboto Mono', monospace;
+  }
+
+  .section-title {
+      position: relative;
+      display: inline-block;
+  }
+
+  .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 50%;
+      height: 3px;
+      background: var(--accent);
+  }
+
+  .btn-primary {
+      background: var(--primary);
+      transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-hover {
+      transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial-card {
+      position: relative;
+  }
+
+  .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      font-size: 60px;
+      color: rgba(37, 99, 235, 0.1);
+      font-family: serif;
+  }

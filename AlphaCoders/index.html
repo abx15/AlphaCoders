@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Coders - Web Development & Digital Solutions</title>
+    <meta name="description"
+        content="Professional web development, mobile apps, and digital solutions for your business growth">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+</head>
+
+<body class="antialiased">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <h1 class="text-2xl font-bold text-gray-800">Alpha Coders</h1>
+                <span class="code-font text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Code. Create.
+                    Conquer.</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition">Home</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition">About</a></li>
+                <li><a href="#services" class="text-gray-600 hover:text-blue-600 font-medium transition">Services</a>
+                </li>
+                <li><a href="#portfolio" class="text-gray-600 hover:text-blue-600 font-medium transition">Portfolio</a>
+                </li>
+                <li><a href="#team" class="text-gray-600 hover:text-blue-600 font-medium transition">Team</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-blue-50 to-gray-50">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">🚀 Transforming Ideas Into
+                    <span class="text-blue-600">Digital Reality</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">At Alpha Coders, we build high-performing websites, smart
+                    applications, and creative digital solutions — tailored for your success in this digital era.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="btn-primary text-white font-medium py-3 px-6 rounded-lg text-center">Get
+                        Free Consultation</a>
+                    <a href="#portfolio"
+                        class="border border-blue-600 text-blue-600 font-medium py-3 px-6 rounded-lg hover:bg-blue-50 transition text-center">View
+                        Our Work</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="assets/images/hero-image-placeholder.webp" alt="Web development illustration"
+                    class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h2 class="text-4xl font-bold text-blue-600 mb-2">150+</h2>
+                    <p class="text-gray-600">Projects Completed</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h2 class="text-4xl font-bold text-blue-600 mb-2">50+</h2>
+                    <p class="text-gray-600">Happy Clients</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h2 class="text-4xl font-bold text-blue-600 mb-2">10+</h2>
+                    <p class="text-gray-600">Industry Awards</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg">
+                    <h2 class="text-4xl font-bold text-blue-600 mb-2">24/7</h2>
+                    <p class="text-gray-600">Support Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us  -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">👨‍💻 About Alpha Coders</h2>
+
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <p class="text-gray-600 mb-4">Founded in 2025, Alpha Coders has grown from a small startup to a
+                        trusted digital solutions provider serving clients across 5 countries.</p>
+                    <p class="text-gray-600 mb-4">We are a team of passionate developers, designers, and thinkers,
+                        committed to delivering top-notch digital solutions. Our expertise spans across web
+                        technologies, mobile platforms, and cloud solutions.</p>
+                    <p class="text-gray-600 mb-6">We believe in innovation, clean code, and client satisfaction. From
+                        simple websites to complex web apps, we build with performance and purpose.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Our Development Process:</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                        <li>Requirement Analysis</li>
+                        <li>Planning & Strategy</li>
+                        <li>UI/UX Design</li>
+                        <li>Development</li>
+                        <li>Quality Testing</li>
+                        <li>Deployment & Support</li>
+                    </ol>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="assets/images/about-image-placeholder.jpg" alt="Our team working"
+                        class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">💡 Vision:</h3>
+                    <p class="text-gray-600">To become a trusted tech partner for startups, businesses, and
+                        entrepreneurs across the globe by delivering innovative solutions that drive growth.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🎯 Mission:</h3>
+                    <p class="text-gray-600">To deliver smart, scalable, and impactful digital experiences that help
+                        businesses thrive in the digital landscape through cutting-edge technology.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🌱 Values:</h3>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>Integrity in all dealings</li>
+                        <li>Excellence in execution</li>
+                        <li>Innovation in approach</li>
+                        <li>Client success focus</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 section-title">💼 Our Comprehensive Services</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">We offer end-to-end digital solutions to take
+                your business online and help you grow</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🔹 Web Development</h3>
+                    <p class="text-gray-600 mb-3">Custom websites, portfolio sites, landing pages, and more using modern
+                        tech stacks:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>Frontend: HTML5, CSS3, JavaScript, React, Vue, Angular</li>
+                        <li>Backend: Node.js, Express.js, PHP, Python, Java</li>
+                        <li>CMS: WordPress, Shopify, Magento, Webflow</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🔹 Mobile App Development</h3>
+                    <p class="text-gray-600 mb-3">Cross-platform mobile applications for iOS and Android:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>React Native applications</li>
+                        <li>Flutter development</li>
+                        <li>Native iOS/Android apps</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🔹 UI/UX Design</h3>
+                    <p class="text-gray-600 mb-3">Attractive, user-friendly interfaces designed for engagement and
+                        experience:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>User research & persona development</li>
+                        <li>Wireframing & prototyping</li>
+                        <li>Interaction design</li>
+                        <li>Usability testing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🔹 E-Commerce Solutions</h3>
+                    <p class="text-gray-600 mb-3">Complete online stores with all modern features:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>WooCommerce, Shopify development</li>
+                        <li>Payment gateway integration</li>
+                        <li>Inventory management</li>
+                        <li>Multi-vendor marketplace</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🔹 Digital Marketing</h3>
+                    <p class="text-gray-600 mb-3">Complete online visibility solutions:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>SEO & Performance Optimization</li>
+                        <li>Social Media Marketing</li>
+                        <li>PPC Campaign Management</li>
+                        <li>Content Marketing</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">🔹 Custom Solutions</h3>
+                    <p class="text-gray-600 mb-3">Tailored software for your unique needs:</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-600">
+                        <li>ERP/CRM systems</li>
+                        <li>Business automation tools</li>
+                        <li>SAAS products</li>
+                        <li>Blockchain solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-5 section-title">🎨 Our Portfolio</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">Some of our recent projects that we're proud of
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="assets/images/project1.jpg" alt="E-commerce website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">ShopEasy - E-commerce Platform</h3>
+                        <p class="text-gray-600">Complete online store with inventory management and payment integration
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="assets/images/project2.jpg" alt="Mobile app" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">HealthTrack - Fitness App</h3>
+                        <p class="text-gray-600">Cross-platform mobile application for fitness tracking</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md card-hover">
+                    <img src="assets/images/project3.webp" alt="Corporate website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">GlobalBiz - Corporate Website</h3>
+                        <p class="text-gray-600">Multilingual corporate website with CMS integration</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#contact" class="btn-primary text-white font-medium py-3 px-6 rounded-lg inline-block">View
+                    More Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4 section-title">👥 Meet Our Expert Team</h2>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">We are a blend of creativity and logic –
+                developers, designers, and strategists working as one.</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Team Member 1 -->
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden text-center p-6 card-hover transition-all duration-300 hover:shadow-lg">
+                    <img src="assets/images/arun.jpg" alt="Arun Kumar Bind"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-blue-100">
+                    <h3 class="text-xl font-semibold text-gray-800">Arun Kumar Bind</h3>
+                    <p class="text-blue-600 font-medium mb-2">Full Stack Developer & Team Lead</p>
+                    <p class="text-gray-600 text-sm mb-4">1 years experience in web technologies. Specializes in MERN
+                        stack and cloud architecture.</p>
+                    <p class="text-gray-500 text-xs code-font mb-4">Skills: JavaScript, React.js, Node.js,Express.js,
+                        AWS, Database Design</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-black"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-red-500 hover:text-red-700"><i class="fas fa-portfolio"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden text-center p-6 card-hover transition-all duration-300 hover:shadow-lg">
+                    <img src="assets/images/riya.webp" alt="Riya Sharma"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-blue-100">
+                    <h3 class="text-xl font-semibold text-gray-800">Riya Sharma</h3>
+                    <p class="text-blue-600 font-medium mb-2">Frontend Developer</p>
+                    <p class="text-gray-600 text-sm mb-4">Creating beautiful, interactive, and responsive designs with
+                        React and Tailwind.</p>
+                    <p class="text-gray-500 text-xs code-font mb-4">Skills: React, Vue, CSS Animations, Bootstrap, Responsive
+                        Design</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-black"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-red-500 hover:text-red-700"><i class="fas fa-portfolio"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden text-center p-6 card-hover transition-all duration-300 hover:shadow-lg">
+                    <img src="assets/images/mohit.jpg" alt="Mohit Verma"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-blue-100">
+                    <h3 class="text-xl font-semibold text-gray-800">Mohit Verma</h3>
+                    <p class="text-blue-600 font-medium mb-2">UI/UX Designer</p>
+                    <p class="text-gray-600 text-sm mb-4">Designs that not only look good but also offer a smooth user
+                        journey.</p>
+                    <p class="text-gray-500 text-xs code-font mb-4">Skills: Figma, Adobe XD, User Research, Prototyping
+                    </p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-black"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="text-red-500 hover:text-red-700"><i class="fas fa-portfolio"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden text-center p-6 card-hover transition-all duration-300 hover:shadow-lg">
+                    <img src="assets/images/aayush.png" alt="Aayush Patel"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-blue-100">
+                    <h3 class="text-xl font-semibold text-gray-800">Aayush Patel</h3>
+                    <p class="text-blue-600 font-medium mb-2">SEO & Digital Marketing</p>
+                    <p class="text-gray-600 text-sm mb-4">Optimizing content, performance, and visibility on search
+                        engines.</p>
+                    <p class="text-gray-500 text-xs code-font mb-4">Skills: SEO, Google Analytics, PPC, Content Strategy
+                    </p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-black"><i class="fab fa-medium"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-red-500 hover:text-red-700"><i class="fas fa-portfolio"></i></a>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 - Added new member -->
+                <div
+                    class="bg-gray-50 rounded-lg overflow-hidden text-center p-6 card-hover transition-all duration-300 hover:shadow-lg">
+                    <img src="assets/images/priya.webp" alt="Priya Singh"
+                        class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-2 border-blue-100">
+                    <h3 class="text-xl font-semibold text-gray-800">Priya Singh</h3>
+                    <p class="text-blue-600 font-medium mb-2">Backend Developer</p>
+                    <p class="text-gray-600 text-sm mb-4">Building robust and scalable server-side applications and
+                        APIs.</p>
+                    <p class="text-gray-500 text-xs code-font mb-4">Skills: Python, Django, REST APIs, Microservices</p>
+                    <div class="flex justify-center space-x-3">
+                        <a href="#" class="text-blue-500 hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-700 hover:text-black"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-red-500 hover:text-red-700"><i class="fas fa-portfolio"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Links Section -->
+            <div class="mt-16 text-center">
+                <h3 class="text-2xl font-semibold mb-6">Explore Our Team's Work</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                        View Developer Portfolios
+                    </a>
+                    <a href="#"
+                        class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        See Design Projects
+                    </a>
+                    <a href="#"
+                        class="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                        Marketing Case Studies
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-blue-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">💬 What Our Clients Say</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <blockquote class="text-gray-600 italic mb-6">
+                        "Alpha Coders transformed our online presence completely. Their web solution increased our
+                        conversions by 40% within 3 months."
+                    </blockquote>
+                    <p class="font-semibold text-gray-800">- Rajesh Mehta, CEO of RetailPro</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <blockquote class="text-gray-600 italic mb-6">
+                        "The team delivered our mobile app ahead of schedule with excellent quality. Their attention to
+                        detail is remarkable."
+                    </blockquote>
+                    <p class="font-semibold text-gray-800">- Priya Singh, Founder of HealthTrack</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg testimonial-card">
+                    <blockquote class="text-gray-600 italic mb-6">
+                        "Reliable, professional, and technically excellent. We've been working with them for 2 years and
+                        they keep impressing us."
+                    </blockquote>
+                    <p class="font-semibold text-gray-800">- Amit Kumar, Director of GlobalBiz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section - Expanded -->
+    <section id="why-us" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">🌟 Why Choose Alpha Coders?</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">✅ Client-First Approach</h3>
+                    <p class="text-gray-600">Your success is our priority. We work closely with you to understand your
+                        business needs and goals.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">✅ Agile Development Process</h3>
+                    <p class="text-gray-600">We follow agile methodologies to deliver incremental value and adapt to
+                        changes quickly.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">✅ Modern Tech Stack</h3>
+                    <p class="text-gray-600">Using cutting-edge technologies to build future-proof solutions that scale
+                        with your business.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">✅ Transparent Communication</h3>
+                    <p class="text-gray-600">Regular updates, clear timelines, and honest discussions about your project
+                        status.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">✅ Affordable Pricing</h3>
+                    <p class="text-gray-600">Flexible pricing models to suit different budgets without compromising on
+                        quality.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-600 card-hover">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">✅ 100% Satisfaction Guarantee</h3>
+                    <p class="text-gray-600">We stand behind our work with a satisfaction guarantee and ongoing support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Expanded -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">📞 Let's Build Something Great Together!</h2>
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Have a project in mind or need help with your
+                        website?</h3>
+                    <p class="text-gray-600 mb-8">We'd love to hear about your project and discuss how we can help.</p>
+
+                    <address class="not-italic mb-8">
+                        <div class="flex items-start mb-4">
+                            <svg class="w-6 h-6 text-blue-600 mr-4 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <p><a href="mailto:contact@alphacoders.in"
+                                    class="text-gray-600 hover:text-blue-600">contact@alphacoders.in</a></p>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <svg class="w-6 h-6 text-blue-600 mr-4 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <p><a href="tel:+91XXXXXXXXXX" class="text-gray-600 hover:text-blue-600">+91-XXXXXXXXXX</a>
+                            </p>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-4 mt-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <p class="text-gray-600">Pryagraj, Uttar Pradesh, India<br>(Serving clients worldwide)</p>
+                        </div>
+                    </address>
+
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Working Hours</h3>
+                    <p class="text-gray-600 mb-1">Monday-Friday: 9:00 AM - 6:00 PM IST</p>
+                    <p class="text-gray-600">Emergency support available 24/7</p>
+                </div>
+
+                <div class="lg:w-1/2 bg-white p-8 rounded-lg shadow-md">
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested
+                                In</label>
+                            <select id="service" name="service"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile App Development</option>
+                                <option value="design">UI/UX Design</option>
+                                <option value="ecommerce">E-Commerce</option>
+                                <option value="seo">SEO & Marketing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Project Details</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="btn-primary text-white font-medium py-3 px-6 rounded-lg w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/News Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 section-title">📰 Latest From Our Blog</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden card-hover">
+                    <img src="assets/images/blog1.webp" alt="Web Development Trends" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Web Development Trends in 2025</h3>
+                        <p class="text-gray-600 mb-4">Explore the latest technologies shaping the future of web
+                            development this year.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden card-hover">
+                    <img src="assets/images/blog2.jpg" alt="Tech Stack Guide" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">How to Choose the Right Tech Stack</h3>
+                        <p class="text-gray-600 mb-4">A guide to selecting the perfect technology combination for your
+                            project.</p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg overflow-hidden card-hover">
+                    <img src="assets/images/blog3.png" alt="SEO Strategies" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">SEO Strategies That Actually Work</h3>
+                        <p class="text-gray-600 mb-4">Proven techniques to improve your search engine rankings in 2025.
+                        </p>
+                        <a href="#" class="text-blue-600 font-medium hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="border border-blue-600 text-blue-600 font-medium py-3 px-6 rounded-lg hover:bg-blue-50 transition inline-block">View
+                    All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Alpha Coders</h3>
+                    <p class="code-font text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded inline-block mb-4">Code.
+                        Create. Conquer.</p>
+                    <p class="text-gray-400">Your trusted partner for digital transformation and web solutions.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition">Our Team</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Mobile Apps</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">UI/UX Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">E-Commerce</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Digital Marketing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Custom Software</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-600 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-400 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-700 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-pink-600 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-800 transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter for updates</p>
+                    <div class="flex mt-2">
+                        <input type="email" placeholder="Your email"
+                            class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button
+                            class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Alpha Coders. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
